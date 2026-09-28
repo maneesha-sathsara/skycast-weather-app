@@ -1,0 +1,484 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #182230;
+}
+
+
+/* =========================
+   MAIN PAGE
+   ========================= */
+
+.page {
+    width: 90%;
+    max-width: 1195px;
+    min-height: 570px;
+    margin: 65px auto;
+    padding: 0 0 30px;
+
+    background: linear-gradient(
+        135deg,
+        #f4f8fb 0%,
+        #eef8fa 55%,
+        #e8f8f8 100%
+    );
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+.site-header {
+    width: 75%;
+    margin: 0 auto;
+    padding: 20px 0 14px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid #dfe8eb;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo {
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #edf8f8;
+    border-radius: 9px;
+
+    font-size: 19px;
+}
+
+.brand h1 {
+    margin: 0;
+
+    color: #172e65;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.brand p {
+    margin: 1px 0 0;
+
+    color: #7a858d;
+    font-size: 9px;
+}
+
+.header-badge {
+    padding: 6px 11px;
+
+    background: #e8f7f4;
+    color: #087f6d;
+
+    border-radius: 15px;
+
+    font-size: 9px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   MAIN CONTENT
+   ========================= */
+
+main {
+    width: 52%;
+    margin: 0 auto;
+    padding-top: 34px;
+}
+
+
+/* =========================
+   HERO
+   ========================= */
+
+.hero {
+    text-align: center;
+}
+
+.hero h2 {
+    margin: 0 0 7px;
+
+    color: #182230;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.subtitle {
+    margin: 0 0 20px;
+
+    color: #69747d;
+    font-size: 12px;
+}
+
+
+/* =========================
+   SEARCH
+   ========================= */
+
+.search-row {
+    width: 100%;
+
+    display: flex;
+    gap: 7px;
+
+    margin: 0 auto;
+}
+
+#cityInput {
+    flex: 1;
+
+    height: 38px;
+
+    padding: 0 13px;
+
+    background: #ffffff;
+
+    border: 1px solid #dce3e8;
+    border-radius: 8px;
+
+    outline: none;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+
+    color: #333;
+}
+
+#cityInput::placeholder {
+    color: #9aa2a8;
+}
+
+#cityInput:focus {
+    border-color: #049179;
+    box-shadow: 0 0 0 2px rgba(4, 145, 121, 0.08);
+}
+
+.search-row button {
+    height: 38px;
+
+    padding: 0 18px !important;
+
+    background-color: #049179 !important;
+    color: #ffffff !important;
+
+    border: none !important;
+    border-radius: 8px !important;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.search-row button:hover {
+    background-color: #037b67 !important;
+}
+
+
+/* =========================
+   STATUS MESSAGE
+   ========================= */
+
+.status {
+    min-height: 15px;
+
+    margin: 9px 0 0;
+
+    color: #66727a;
+    font-size: 10px;
+}
+
+
+/* =========================
+   CURRENT WEATHER
+   ========================= */
+
+.current-card {
+    margin-top: 18px;
+
+    padding: 17px;
+
+    background: #ffffff;
+
+    border: 1px solid #e3eaed;
+    border-radius: 10px;
+}
+
+.current-card h2 {
+    margin: 0 0 15px;
+
+    color: #172e65;
+
+    font-size: 17px;
+}
+
+.current-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.stat {
+    padding: 12px;
+
+    background: #f7fafb;
+
+    border-radius: 7px;
+}
+
+.stat-label {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #7b858c;
+    font-size: 9px;
+}
+
+.stat-value {
+    display: block;
+
+    color: #172e65;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* =========================
+   FORECAST
+   ========================= */
+
+.forecast-section {
+    margin-top: 25px;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 10px;
+}
+
+.section-heading h2 {
+    margin: 0 0 4px;
+
+    color: #182230;
+    font-size: 16px;
+}
+
+.section-heading p {
+    margin: 0;
+
+    color: #7b858c;
+    font-size: 10px;
+}
+
+.forecast-icon {
+    padding: 7px;
+
+    background: #edf8ff;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   TABLE
+   ========================= */
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background: rgba(255, 255, 255, 0.4);
+
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+thead {
+    background: rgba(235, 247, 248, 0.75);
+}
+
+th {
+    padding: 9px 8px;
+
+    color: #4b7472;
+
+    font-size: 8px;
+    font-weight: 700;
+
+    text-align: left;
+
+    text-transform: uppercase;
+}
+
+td {
+    padding: 9px 8px;
+
+    color: #4f5b63;
+
+    font-size: 9px;
+
+    border-bottom: 1px solid #e6edef;
+}
+
+tbody tr {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+tbody tr:hover {
+    background: rgba(255, 255, 255, 0.75);
+}
+
+
+/* Rainy day */
+
+tbody tr.rainy-day {
+    background: #e3f4ff;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+.site-footer {
+    width: 75%;
+
+    margin: 28px auto 0;
+    padding-top: 18px;
+
+    text-align: center;
+
+    border-top: 1px solid #dfe8eb;
+}
+
+.footer-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    color: #172e65;
+
+    font-size: 13px;
+}
+
+.site-footer > p {
+    margin: 6px 0 12px;
+
+    color: #7c858b;
+
+    font-size: 9px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+
+    color: #7c858b;
+
+    font-size: 8px;
+}
+
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 800px) {
+
+    .page {
+        width: 94%;
+        margin: 25px auto;
+    }
+
+    .site-header,
+    .site-footer {
+        width: 88%;
+    }
+
+    main {
+        width: 75%;
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    .page {
+        width: 100%;
+        margin: 0;
+    }
+
+    .site-header {
+        width: 90%;
+        padding: 18px 0;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    .header-badge {
+        display: none;
+    }
+
+    .hero h2 {
+        font-size: 21px;
+    }
+
+    .search-row {
+        flex-direction: column;
+    }
+
+    .search-row button {
+        width: 100%;
+    }
+
+    .current-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .site-footer {
+        width: 90%;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
